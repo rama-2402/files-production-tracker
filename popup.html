@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Velocity Tracker</title>
+    <style>
+      html,body{
+        width: 230px;
+        padding-top: 2px ;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        text-align: center;
+      }
+    </style>
+</head>
+<body></body>
+    <main>
+      <h2>Velocity Tracker</h3>
+      <table id="dashboard">
+        <tr align="left">
+          <th scope="row">Duration: </th>
+          <td align="center"
+          id="timeDuration">00:00</td>
+        </tr>
+        <tr align="left">
+          <th scope="row">Current Count: </th>
+          <td align="center" 
+          >0</td>
+        </tr>
+        <tr align="left">
+          <th scope="row">Expected Count: </th>
+          <td align="center"
+          id="expProdCount">0</td>
+        </tr>
+        <tr align="left">
+          <th scope="row">Current Velocity: </th>
+          <td align="center"
+          id="currentVel">0.00</td>
+        </tr>
+        <tr align="left">
+          <th scope="row">Target Velocity: </th>
+          <td align="center"
+          id="targetVel">0</td>
+        </tr>
+        <tr>
+          <td>
+            <input id="setTargetVel" type="number" size="15">
+          </td>
+          <td>
+            <button id="setTargetVelBtn" class="btn btn-outline-primary btn-block mb-2"> SET </button>
+          </td>
+        </tr>
+      </table>
+      <p>
+      <button id="startTimer" > START TRACKING </button>
+      <p>
+      <button id="pauseTimer" > PAUSE TRACKING </button>
+      <p>
+      <button id="resetAll" > RESET ALL </button>
+      <p>
+      <button id="refresh" > REFRESH </button>
+
+    </main>
+    <script src="foreground.js"></script>
+  </body>
+</html>

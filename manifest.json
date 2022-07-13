@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Velocity Tracker",
+    "version": "1.0.0",
+    "description": "Tracks and maintains the velocity and prod count in realtime",
+    "author":"rrmasu",
+
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "foreground.js"
+        ]
+    },   
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"], 
+        "js": ["foreground.js"]
+    }],
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Velocity Tracker"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
