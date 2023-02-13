@@ -36,3 +36,5 @@ These hotkeys can be used to increment or decrement the count everytime files ar
 * **Current Velocity** -> Shows the Velocity (count/duration) of files being processed
 * **Target Velocity** -> Shows the Expected Velocity to be maintained to meat the Target set
 
+## Shrinkage Tracker
+An Excel Macro Tool for keeping track of the team's shrinkage 
